@@ -14,6 +14,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@apidevtools/json-schema-ref-parser@npm:9.0.9":
+  version: 9.0.9
+  resolution: "@apidevtools/json-schema-ref-parser@npm:9.0.9"
+  dependencies:
+    "@jsdevtools/ono": ^7.1.3
+    "@types/json-schema": ^7.0.6
+    call-me-maybe: ^1.0.1
+    js-yaml: ^4.1.0
+  checksum: b21f6bdd37d2942c3967ee77569bc74fadd1b922f688daf5ef85057789a2c3a7f4afc473aa2f3a93ec950dabb6ef365f8bd9cf51e4e062a1ee1e59b989f8f9b4
+  languageName: node
+  linkType: hard
+
 "@ardatan/relay-compiler@npm:12.0.0":
   version: 12.0.0
   resolution: "@ardatan/relay-compiler@npm:12.0.0"
@@ -2746,6 +2758,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fetsorn/opentelemetry-console-exporter@npm:0.0.3":
+  version: 0.0.3
+  resolution: "@fetsorn/opentelemetry-console-exporter@npm:0.0.3"
+  peerDependencies:
+    "@opentelemetry/api": ^1.0.0
+    "@opentelemetry/core": ^1.0.0
+    "@opentelemetry/resources": ^1.0.0
+    "@opentelemetry/sdk-trace-base": ^1.0.0
+  checksum: f67e719b52ca219866376db3b06089a6b88e1a632038bdda71bae16f9862e14cc8598c45848acac1d59f76caad01b38d2e2c6a87bffcfc7c8c5dba53212d65bd
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -3146,6 +3170,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jsdevtools/ono@npm:^7.1.3":
+  version: 7.1.3
+  resolution: "@jsdevtools/ono@npm:7.1.3"
+  checksum: 2297fcd472ba810bffe8519d2249171132844c7174f3a16634f9260761c8c78bc0428a4190b5b6d72d45673c13918ab9844d706c3ed4ef8f62ab11a2627a08ad
+  languageName: node
+  linkType: hard
+
 "@lavamoat/aa@npm:^3.0.0":
   version: 3.1.0
   resolution: "@lavamoat/aa@npm:3.1.0"
@@ -3495,6 +3526,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@msgpack/msgpack@npm:2.7.2":
+  version: 2.7.2
+  resolution: "@msgpack/msgpack@npm:2.7.2"
+  checksum: 85258ef7a3fb74c1e1f8be017413c1311938bb614b46cf1643fb33a9469b79a08ce61ab81cc139644b12d537178687f4d107d902337062ff728d55825c492b83
+  languageName: node
+  linkType: hard
+
 "@msgpackr-extract/msgpackr-extract-darwin-arm64@npm:2.1.2":
   version: 2.1.2
   resolution: "@msgpackr-extract/msgpackr-extract-darwin-arm64@npm:2.1.2"
@@ -3618,6 +3656,140 @@ __metadata:
     node-gyp: ^7.1.0
     read-package-json-fast: ^2.0.1
   checksum: 41924e7925452ac8e78d78bef5d65b3d58f86eea4481a453e11e3a9099504bfbfcf1f65d7f75d92170b846fa347d05424e58e617fb9c17b3efd87db599a0f46e
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/api-metrics@npm:0.32.0":
+  version: 0.32.0
+  resolution: "@opentelemetry/api-metrics@npm:0.32.0"
+  dependencies:
+    "@opentelemetry/api": ^1.0.0
+  checksum: 00595d29b0a501d2f35a91205ab9b1985c2d94cc8636201518bab66566e2714d7944daf0a0c69f319f142d8e22b30c7d933b5e7a0ad95cb21192032c938d813a
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/api@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@opentelemetry/api@npm:1.2.0"
+  checksum: 764efa81bf939200a8e80520a4735b23038abafc60c80420b007ae2bbb7ad843d806894414e95d974c2ef1b81d4ae8a3106804e1af7b5090240cfeb2467db099
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/api@npm:^1.0.0":
+  version: 1.3.0
+  resolution: "@opentelemetry/api@npm:1.3.0"
+  checksum: 33d284b67b6fab20ff72961d289c6487d3cb27caf7489f0231d7030551f82871e081e744b0390751d8aef3bf1614bd79f854788901a354e15274f552581fb374
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/core@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@opentelemetry/core@npm:1.6.0"
+  dependencies:
+    "@opentelemetry/semantic-conventions": 1.6.0
+  peerDependencies:
+    "@opentelemetry/api": ">=1.0.0 <1.3.0"
+  checksum: ae3e6773c1109509f3bb58ec9281b4455fb8843754979e5e1cd12991c19f405be6b99468895d58766a1c359528fac90abc047a09aeb257cae414ba4c2e8c1601
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/exporter-trace-otlp-http@npm:0.32.0":
+  version: 0.32.0
+  resolution: "@opentelemetry/exporter-trace-otlp-http@npm:0.32.0"
+  dependencies:
+    "@opentelemetry/core": 1.6.0
+    "@opentelemetry/otlp-exporter-base": 0.32.0
+    "@opentelemetry/otlp-transformer": 0.32.0
+    "@opentelemetry/resources": 1.6.0
+    "@opentelemetry/sdk-trace-base": 1.6.0
+  peerDependencies:
+    "@opentelemetry/api": ^1.0.0
+  checksum: 160aa73c5e67ff63546f414f3d6b1f927a31a84903a66972529f2e94126081ef1d5939195b659c99c37129643ee8cb0bf2590cece12d22b6688b4d238a631bb0
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/otlp-exporter-base@npm:0.32.0":
+  version: 0.32.0
+  resolution: "@opentelemetry/otlp-exporter-base@npm:0.32.0"
+  dependencies:
+    "@opentelemetry/core": 1.6.0
+  peerDependencies:
+    "@opentelemetry/api": ^1.0.0
+  checksum: e3b751c6e5454b680da173cf6c874b91395eff46ae78b012f5be7ad00237f8b63253ae9897300c3bc297bc08b0f3c902af1a6cced7b88ad190cb17ba329a31a1
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/otlp-transformer@npm:0.32.0":
+  version: 0.32.0
+  resolution: "@opentelemetry/otlp-transformer@npm:0.32.0"
+  dependencies:
+    "@opentelemetry/api-metrics": 0.32.0
+    "@opentelemetry/core": 1.6.0
+    "@opentelemetry/resources": 1.6.0
+    "@opentelemetry/sdk-metrics": 0.32.0
+    "@opentelemetry/sdk-trace-base": 1.6.0
+  peerDependencies:
+    "@opentelemetry/api": ">=1.0.0 <1.3.0"
+  checksum: ef33d7e92cef9ea9d31d5bee09c0d0bde69de0ca82275676bb4f4d8b28b6b1aff576141629c833676a29bebbe889cac766c11d99ad95ce30575fefb92ed2dc65
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/resources@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@opentelemetry/resources@npm:1.6.0"
+  dependencies:
+    "@opentelemetry/core": 1.6.0
+    "@opentelemetry/semantic-conventions": 1.6.0
+  peerDependencies:
+    "@opentelemetry/api": ">=1.0.0 <1.3.0"
+  checksum: aac9bab5f2c117fb428eeaab0eb85b3eda96c6afe70a683f1f4915ebb05aa4e2117c147b2352ad8a3ef009fe2a501d20e1b7161e02d96071b13401de37325c97
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/sdk-metrics@npm:0.32.0":
+  version: 0.32.0
+  resolution: "@opentelemetry/sdk-metrics@npm:0.32.0"
+  dependencies:
+    "@opentelemetry/api-metrics": 0.32.0
+    "@opentelemetry/core": 1.6.0
+    "@opentelemetry/resources": 1.6.0
+    lodash.merge: 4.6.2
+  peerDependencies:
+    "@opentelemetry/api": ^1.0.0
+  checksum: 365112d044446d5292aa6703a1a9dc713c59227d15b6ea45332150dfd058e134399f93c36d0c607bcef844923db35681103d76ca0da958322f8142443ff8b29a
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/sdk-trace-base@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@opentelemetry/sdk-trace-base@npm:1.6.0"
+  dependencies:
+    "@opentelemetry/core": 1.6.0
+    "@opentelemetry/resources": 1.6.0
+    "@opentelemetry/semantic-conventions": 1.6.0
+  peerDependencies:
+    "@opentelemetry/api": ">=1.0.0 <1.3.0"
+  checksum: e85176a57cd33aad05470ac07963d42c380779584462294cbd9dcf7ad26974cc12c674f053f461ab593dce56271da6b592b9c9bc1a3a490f5ae0a77c09798d36
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/sdk-trace-web@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@opentelemetry/sdk-trace-web@npm:1.6.0"
+  dependencies:
+    "@opentelemetry/core": 1.6.0
+    "@opentelemetry/sdk-trace-base": 1.6.0
+    "@opentelemetry/semantic-conventions": 1.6.0
+  peerDependencies:
+    "@opentelemetry/api": ">=1.0.0 <1.3.0"
+  checksum: 21e7f38ea8aa84ed28116a5207e9286054133428162f4904a727ea0016bb9dd512c0545be74d6b4d49f846554216ab605bc64386fc3f0e4d8ed4d2e28bced86b
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/semantic-conventions@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@opentelemetry/semantic-conventions@npm:1.6.0"
+  checksum: e73d452a4c83f220860b00b7e42a34bc8bebeb70a7e0278abe0d3f6dfbfd69ed3f367accf6bb448effcdd998f402b82bfa80b4d902ae1bfa8d51b13ab0b2bd55
   languageName: node
   linkType: hard
 
@@ -4029,6 +4201,167 @@ __metadata:
     webpack-plugin-serve:
       optional: true
   checksum: 48d8b2813dfba7d482e58a2b0161b79e3a5d608603f1a3c34d709ecc2e6e08f8b14f79934c57849d06f153eb327f18e3d8e1539f978e40ca91539c342f27b8ae
+  languageName: node
+  linkType: hard
+
+"@polywrap/asyncify-js@npm:0.10.0-pre.5":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/asyncify-js@npm:0.10.0-pre.5"
+  checksum: b983dbb5c09660483f94eac24e3756fa4b9094712a8bc1ef283e4a8c82304eb2e8719bb1fca4d86c3db31867f9489026e0d6738397e2ebbc16e53d1428d1b934
+  languageName: node
+  linkType: hard
+
+"@polywrap/client-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client::locator=snap%40workspace%3Apackages%2Fsnap":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/client-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client::hash=3d0f97&locator=snap%40workspace%3Apackages%2Fsnap"
+  dependencies:
+    "@polywrap/core-js": 0.10.0-pre.5
+    "@polywrap/msgpack-js": 0.10.0-pre.5
+    "@polywrap/result": 0.10.0-pre.5
+    "@polywrap/uri-resolver-extensions-js": 0.10.0-pre.5
+    "@polywrap/uri-resolvers-js": 0.10.0-pre.5
+  checksum: 6e3a8eceb7d2df520042340e190b6a60d5b37badd1fa3b37aa8cc3971646fb0ea92bcdbaae6b7ec793a439a284de097ad1558c44554a089101722e7baabff1b0
+  languageName: node
+  linkType: hard
+
+"@polywrap/core-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/core::locator=snap%40workspace%3Apackages%2Fsnap":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/core-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/core#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/core::hash=224fa9&locator=snap%40workspace%3Apackages%2Fsnap"
+  dependencies:
+    "@polywrap/result": 0.10.0-pre.5
+    graphql: 15.5.0
+    graphql-tag: 2.10.4
+  checksum: d8c7bec18faafab421b216f2f65929182f635fcc6d91aeec6759ffdbf61a85daf2da35079cbd2c511e4af047f22a1e69e627bffd8adc7171d0739d00591543c1
+  languageName: node
+  linkType: hard
+
+"@polywrap/core-js@npm:0.10.0-pre.5":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/core-js@npm:0.10.0-pre.5"
+  dependencies:
+    "@polywrap/result": 0.10.0-pre.5
+    "@polywrap/tracing-js": 0.10.0-pre.5
+    "@polywrap/wrap-manifest-types-js": 0.10.0-pre.5
+    graphql: 15.5.0
+    graphql-tag: 2.10.4
+  checksum: 685c8e121c5731ffb73384509e72049ff9742b58bb2b1b03685d2ef78da31f53781e793a929877266d96b0e60d0b9f384552532a5d39d95539f1a2b8ad452d1a
+  languageName: node
+  linkType: hard
+
+"@polywrap/msgpack-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack::locator=snap%40workspace%3Apackages%2Fsnap":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/msgpack-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack::hash=039047&locator=snap%40workspace%3Apackages%2Fsnap"
+  dependencies:
+    "@msgpack/msgpack": 2.7.2
+  checksum: 44cfa0529ca38eb5dbf9aa48e8a5b872c144decfe3dafe4d11717cadf13f31bb869be9cfd1a37c8615cbeb947508748d93acca2c640b12bcae8e5332f34e6cbf
+  languageName: node
+  linkType: hard
+
+"@polywrap/msgpack-js@npm:0.10.0-pre.5":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/msgpack-js@npm:0.10.0-pre.5"
+  dependencies:
+    "@msgpack/msgpack": 2.7.2
+  checksum: 8d13c18b249731f01bbb56f54e377fd2329b7baa3633b42e8f28ce12b761358a7ac33fd735310e64cd54888554e010f5ca8146c6ad81fb2a543941bb69c302db
+  languageName: node
+  linkType: hard
+
+"@polywrap/result@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/result::locator=snap%40workspace%3Apackages%2Fsnap":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/result@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/result#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/result::hash=6625c2&locator=snap%40workspace%3Apackages%2Fsnap"
+  checksum: 4ea352a35237c2a82cfc907bef8aa78a86de0b75980780ba3302000a2f40ef0dd91bde1ecc2f4d1ededf508fe25f40905a284b327375893a93830934d8fc92e2
+  languageName: node
+  linkType: hard
+
+"@polywrap/result@npm:0.10.0-pre.5":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/result@npm:0.10.0-pre.5"
+  checksum: a1558bf8911649fc8c13f63b7796d19c6558a4a9043f5a5e28b04d47d7c4991bea71a5f943f0fecdabb602eb0efe824e4e41ebaf4b80db5628ff99cb7e061966
+  languageName: node
+  linkType: hard
+
+"@polywrap/tracing-js@npm:0.10.0-pre.5":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/tracing-js@npm:0.10.0-pre.5"
+  dependencies:
+    "@fetsorn/opentelemetry-console-exporter": 0.0.3
+    "@opentelemetry/api": 1.2.0
+    "@opentelemetry/exporter-trace-otlp-http": 0.32.0
+    "@opentelemetry/resources": 1.6.0
+    "@opentelemetry/sdk-trace-base": 1.6.0
+    "@opentelemetry/sdk-trace-web": 1.6.0
+  checksum: 229c86d1ad7c2e8fc8520b47d9dd0077b8354461bf1644b7220ca7b245e51ac5bfa6a1be861d3086481510adb73c912cff9f3767972207ab8c5de578d650f2fe
+  languageName: node
+  linkType: hard
+
+"@polywrap/uri-resolver-extensions-js@npm:0.10.0-pre.5":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/uri-resolver-extensions-js@npm:0.10.0-pre.5"
+  dependencies:
+    "@polywrap/core-js": 0.10.0-pre.5
+    "@polywrap/result": 0.10.0-pre.5
+    "@polywrap/uri-resolvers-js": 0.10.0-pre.5
+    "@polywrap/wasm-js": 0.10.0-pre.5
+    "@polywrap/wrap-manifest-types-js": 0.10.0-pre.5
+  checksum: c0b8de775e32a19656d9615f3f812a9bcceee3cc7d61103730bfce39d37bb63be6715ef242e83d51630008e0fa2d367c8b6b4e2ae9449f994060fd7981fca231
+  languageName: node
+  linkType: hard
+
+"@polywrap/uri-resolvers-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolvers::locator=snap%40workspace%3Apackages%2Fsnap":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/uri-resolvers-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolvers#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolvers::hash=5eb3e5&locator=snap%40workspace%3Apackages%2Fsnap"
+  dependencies:
+    "@polywrap/core-js": 0.10.0-pre.5
+    "@polywrap/result": 0.10.0-pre.5
+  checksum: d159d32090b0b88a98cb6d2bd73ffb6dc31a1456d660060c8d863d05ec2d5af32f556b38a8ae7ab288f93f85bc23b188129c8e03cf764247698cbca65d1a0f18
+  languageName: node
+  linkType: hard
+
+"@polywrap/uri-resolvers-js@npm:0.10.0-pre.5":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/uri-resolvers-js@npm:0.10.0-pre.5"
+  dependencies:
+    "@polywrap/core-js": 0.10.0-pre.5
+    "@polywrap/result": 0.10.0-pre.5
+    "@polywrap/wrap-manifest-types-js": 0.10.0-pre.5
+  checksum: f114df14c2bca4f3be5041af218d29ca3168c8e58664a625da4a274aa89abf46b0266004c3521fcc82d05d6092a42e599c60851f8cb5f20694ccc74849330ac7
+  languageName: node
+  linkType: hard
+
+"@polywrap/wasm-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/wasm::locator=snap%40workspace%3Apackages%2Fsnap":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/wasm-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/wasm#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/wasm::hash=891b11&locator=snap%40workspace%3Apackages%2Fsnap"
+  dependencies:
+    "@polywrap/asyncify-js": 0.10.0-pre.5
+    "@polywrap/core-js": 0.10.0-pre.5
+    "@polywrap/msgpack-js": 0.10.0-pre.5
+    "@polywrap/result": 0.10.0-pre.5
+  checksum: 284d6ca290927966e22f474e29439a029d9ca343e0bf9edbe53ebbe1c33e93a8144deffd5c90e88c21ee5182b55c6b6dbad53965dc633bbbde5eaa9066724ee9
+  languageName: node
+  linkType: hard
+
+"@polywrap/wasm-js@npm:0.10.0-pre.5":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/wasm-js@npm:0.10.0-pre.5"
+  dependencies:
+    "@polywrap/asyncify-js": 0.10.0-pre.5
+    "@polywrap/core-js": 0.10.0-pre.5
+    "@polywrap/msgpack-js": 0.10.0-pre.5
+    "@polywrap/result": 0.10.0-pre.5
+    "@polywrap/tracing-js": 0.10.0-pre.5
+    "@polywrap/wrap-manifest-types-js": 0.10.0-pre.5
+  checksum: 7f4c97a6047522fd079a363957fa08f8d3110d5e5a5a30dea87ea083fb824ae5a571ceb767ac7d1572136ae4547ae6e4d0571ba605be723b00a5faa79f566a01
+  languageName: node
+  linkType: hard
+
+"@polywrap/wrap-manifest-types-js@npm:0.10.0-pre.5":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/wrap-manifest-types-js@npm:0.10.0-pre.5"
+  dependencies:
+    json-schema-ref-parser: 9.0.9
+    jsonschema: 1.4.0
+    semver: 7.3.5
+  checksum: 09d2d164017e84c6bae3b7b92f6cf6c029ed5bd538954572ded308b4ebb5d070f9784095a77112df6eb9240d5f3f21da70a224e67f3c0c27cc9fb9b3cf2f2edb
   languageName: node
   linkType: hard
 
@@ -4621,7 +4954,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/json-schema@npm:*, @types/json-schema@npm:^7.0.4, @types/json-schema@npm:^7.0.5, @types/json-schema@npm:^7.0.7, @types/json-schema@npm:^7.0.8, @types/json-schema@npm:^7.0.9":
+"@types/json-schema@npm:*, @types/json-schema@npm:^7.0.4, @types/json-schema@npm:^7.0.5, @types/json-schema@npm:^7.0.6, @types/json-schema@npm:^7.0.7, @types/json-schema@npm:^7.0.8, @types/json-schema@npm:^7.0.9":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
   checksum: 527bddfe62db9012fccd7627794bd4c71beb77601861055d87e3ee464f2217c85fca7a4b56ae677478367bbd248dbde13553312b7d4dbc702a2f2bbf60c4018d
@@ -6634,6 +6967,13 @@ __metadata:
     function-bind: ^1.1.1
     get-intrinsic: ^1.0.2
   checksum: f8e31de9d19988a4b80f3e704788c4a2d6b6f3d17cfec4f57dc29ced450c53a49270dc66bf0fbd693329ee948dd33e6c90a329519aef17474a4d961e8d6426b0
+  languageName: node
+  linkType: hard
+
+"call-me-maybe@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "call-me-maybe@npm:1.0.2"
+  checksum: 42ff2d0bed5b207e3f0122589162eaaa47ba618f79ad2382fe0ba14d9e49fbf901099a6227440acc5946f86a4953e8aa2d242b330b0a5de4d090bb18f8935cae
   languageName: node
   linkType: hard
 
@@ -10628,6 +10968,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"graphql-tag@npm:2.10.4":
+  version: 2.10.4
+  resolution: "graphql-tag@npm:2.10.4"
+  peerDependencies:
+    graphql: ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: 3084f6a0cd6d93fcc86a8688d8cb01c9af658b56e6282a5996903e23d5981b91558ac32968585971072ca6d82d4dab8300b8caf6c191442c111f7e0010a26f1e
+  languageName: node
+  linkType: hard
+
 "graphql-tag@npm:^2.11.0":
   version: 2.12.6
   resolution: "graphql-tag@npm:2.12.6"
@@ -10645,6 +10994,13 @@ __metadata:
   peerDependencies:
     graphql: ">=0.8.0"
   checksum: 41620699637a5294937bd61d6e2696edea5a1279ef3d8f4b33716a910635595435381ccd1b74c6fae62c2bc81064c62ae27d3559c8380c0f99bdfdc8ecb249b0
+  languageName: node
+  linkType: hard
+
+"graphql@npm:15.5.0":
+  version: 15.5.0
+  resolution: "graphql@npm:15.5.0"
+  checksum: 58a69f7274ae94c690bfa2517f96bbaf1327e1ca1fc46606e772ba2f7ca517adeb375346301373351e693022f448b7866163034209623d7c5315819ef8c5e7c0
   languageName: node
   linkType: hard
 
@@ -11937,6 +12293,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json-schema-ref-parser@npm:9.0.9":
+  version: 9.0.9
+  resolution: "json-schema-ref-parser@npm:9.0.9"
+  dependencies:
+    "@apidevtools/json-schema-ref-parser": 9.0.9
+  checksum: e05166a84c702f54f192edb2eb2e39236c3b03c30561777d63fd156ecd3aa3d2fffc0806a5703384bfba3c78800b1dc05f8da1ea25e6470b35a823210f7d48c4
+  languageName: node
+  linkType: hard
+
 "json-schema-traverse@npm:^0.4.1":
   version: 0.4.1
   resolution: "json-schema-traverse@npm:0.4.1"
@@ -12009,6 +12374,13 @@ __metadata:
   version: 1.3.1
   resolution: "jsonparse@npm:1.3.1"
   checksum: 6514a7be4674ebf407afca0eda3ba284b69b07f9958a8d3113ef1005f7ec610860c312be067e450c569aab8b89635e332cee3696789c750692bb60daba627f4d
+  languageName: node
+  linkType: hard
+
+"jsonschema@npm:1.4.0":
+  version: 1.4.0
+  resolution: "jsonschema@npm:1.4.0"
+  checksum: a2f96b5154658f5567b064d6f25fa4cb7e38b923d5dce9dad8d2566a07dd94abc4acedf234333a91f31bc9934e9dd57c270dcc51e5656b4c104408196c768580
   languageName: node
   linkType: hard
 
@@ -12349,7 +12721,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.merge@npm:^4.6.2":
+"lodash.merge@npm:4.6.2, lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
   checksum: ad580b4bdbb7ca1f7abf7e1bce63a9a0b98e370cf40194b03380a46b4ed799c9573029599caebc1b14e3f24b111aef72b96674a56cfa105e0f5ac70546cdc005
@@ -15658,6 +16030,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"semver@npm:7.3.5":
+  version: 7.3.5
+  resolution: "semver@npm:7.3.5"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: 5eafe6102bea2a7439897c1856362e31cc348ccf96efd455c8b5bc2c61e6f7e7b8250dc26b8828c1d76a56f818a7ee907a36ae9fb37a599d3d24609207001d60
+  languageName: node
+  linkType: hard
+
 "semver@npm:^6.0.0, semver@npm:^6.1.0, semver@npm:^6.1.1, semver@npm:^6.1.2, semver@npm:^6.2.0, semver@npm:^6.3.0":
   version: 6.3.0
   resolution: "semver@npm:6.3.0"
@@ -16065,6 +16448,12 @@ __metadata:
     "@metamask/eslint-config-typescript": ^10.0.0
     "@metamask/snap-types": ^0.22.0
     "@metamask/snaps-cli": ^0.22.0
+    "@polywrap/client-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client
+    "@polywrap/core-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/core
+    "@polywrap/msgpack-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack
+    "@polywrap/result": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/result
+    "@polywrap/uri-resolvers-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolvers
+    "@polywrap/wasm-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/wasm
     "@typescript-eslint/eslint-plugin": ^5.33.0
     "@typescript-eslint/parser": ^5.33.0
     eslint: ^8.21.0

@@ -56,5 +56,13 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@polywrap/client-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client",
+    "@polywrap/core-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/core",
+    "@polywrap/msgpack-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack",
+    "@polywrap/result": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/result",
+    "@polywrap/uri-resolvers-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolvers",
+    "@polywrap/wasm-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/wasm"
   }
 }
