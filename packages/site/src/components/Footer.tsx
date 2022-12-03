@@ -1,6 +1,7 @@
 import styled, { useTheme } from 'styled-components';
 import { ReactComponent as MetaMaskFox } from '../assets/metamask_fox.svg';
 import { ReactComponent as PolywrapLogo } from '../assets/polywrap.svg';
+import { ReactComponent as IpfsLogo } from '../assets/ipfs-logo.svg';
 import { MetaMask } from './MetaMask';
 import { PoweredBy } from './PoweredBy';
 
@@ -32,6 +33,33 @@ const PoweredByContainer = styled.div`
   margin-left: 1rem;
 `;
 
+const BrandText = styled.p`
+  color: white;
+
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* visited link */
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* selected link */
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+`;
+
 export const Footer = () => {
   const theme = useTheme();
 
@@ -41,14 +69,21 @@ export const Footer = () => {
         <MetaMaskFox />
         <PoweredByContainer>
           <PoweredBy color={theme.colors.text.muted} />
-          <p>METAMASK</p>
+          <BrandText>METAMASK</BrandText>
         </PoweredByContainer>
       </PoweredByButton>
       <PoweredByButton href="https://polywrap.io/" target="_blank">
         <PolywrapLogo />
         <PoweredByContainer>
           <PoweredBy color={theme.colors.text.muted} />
-          <p>POLYWRAP</p>
+          <BrandText>POLYWRAP</BrandText>
+        </PoweredByContainer>
+      </PoweredByButton>
+      <PoweredByButton href="https://polywrap.io/" target="_blank">
+        <IpfsLogo />
+        <PoweredByContainer>
+          <PoweredBy color={theme.colors.text.muted} />
+          <BrandText>IPFS</BrandText>
         </PoweredByContainer>
       </PoweredByButton>
     </FooterWrapper>
