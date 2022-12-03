@@ -32,10 +32,22 @@ export const onRpcRequest: OnRpcRequestHandler = async ({
         if (!response.ok) {
           throw response.error;
         }
-        return response.value;
+        return deserializeMap(response.value);
       }
       throw new Error('User declined invocation');
     default:
       throw new Error('Method not found.');
   }
 };
+
+// eslint-disable-next-line
+function deserializeMap(val: any): any {
+  if (val instanceof Map) {
+    const obj: Record<string, any> = {};
+    for (const [a, b] of val.entries()) {
+      obj[a] = deserializeMap(b);
+    }
+    return obj;
+  }
+  return val;
+}

@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { MetamaskActions, MetaMaskContext } from '../hooks';
 import { connectSnap, getSnap, shouldDisplayReconnectButton } from '../utils';
@@ -99,6 +99,10 @@ const Index = () => {
 
   const [result, setResult] = useState(undefined);
 
+  useEffect(() => {
+    console.log(result);
+  }, [result]);
+
   const handleConnectClick = async () => {
     try {
       await connectSnap();
@@ -180,7 +184,9 @@ const Index = () => {
             !shouldDisplayReconnectButton(state.installedSnap)
           }
         />
-        <Notice>{result && JSON.stringify(result)}</Notice>
+        <Notice>
+          <pre>{result && JSON.stringify(result, null, 2)}</pre>
+        </Notice>
       </CardContainer>
     </Container>
   );
