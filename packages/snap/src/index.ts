@@ -112,6 +112,12 @@ export const onRpcRequest: OnRpcRequestHandler = async ({
       //   args: { message: 'Hello World!' },
       // });
 
+      // const result = await client.invoke({
+      //   uri: 'ipfs/QmZxS29UBVryFgcN9cET5UuNcChv7kujQ7X3HbVrLW6gf2',
+      //   method: 'simpleMethod',
+      //   args: { arg: 'Hello World!' },
+      // });
+
       if (result.ok) {
         const a = await wallet.request({
           method: 'snap_confirm',
