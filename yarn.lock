@@ -4213,14 +4213,14 @@ __metadata:
 
 "@polywrap/client-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client::locator=snap%40workspace%3Apackages%2Fsnap":
   version: 0.10.0-pre.5
-  resolution: "@polywrap/client-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client::hash=3d0f97&locator=snap%40workspace%3Apackages%2Fsnap"
+  resolution: "@polywrap/client-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client::hash=a036cd&locator=snap%40workspace%3Apackages%2Fsnap"
   dependencies:
     "@polywrap/core-js": 0.10.0-pre.5
     "@polywrap/msgpack-js": 0.10.0-pre.5
     "@polywrap/result": 0.10.0-pre.5
     "@polywrap/uri-resolver-extensions-js": 0.10.0-pre.5
     "@polywrap/uri-resolvers-js": 0.10.0-pre.5
-  checksum: 6e3a8eceb7d2df520042340e190b6a60d5b37badd1fa3b37aa8cc3971646fb0ea92bcdbaae6b7ec793a439a284de097ad1558c44554a089101722e7baabff1b0
+  checksum: c75a5bf03e31a34c6a1388d2ff77994a8df2ac681a60d52dee8d45c12d06c478131ed7dc6dac934dfe7b9840c69bf83b0e83017653e86c53f59f6d6608d42482
   languageName: node
   linkType: hard
 
@@ -4248,6 +4248,51 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@polywrap/ipfs-http-client-lite@npm:0.3.0":
+  version: 0.3.0
+  resolution: "@polywrap/ipfs-http-client-lite@npm:0.3.0"
+  dependencies:
+    abort-controller: ^3.0.0
+    async-iterator-to-pull-stream: ^1.3.0
+    buffer: ^5.2.1
+    cids: ^0.7.1
+    explain-error: ^1.0.4
+    form-data: ^2.4.0
+    iterable-ndjson: ^1.1.0
+    node-fetch: ^2.6.0
+    pull-stream-to-async-iterator: ^1.0.2
+    querystring: ^0.2.0
+  checksum: b11efedb7b80cc9ccb35b47bf5afdf3e751f6606f1bb3c0c46e226a9b863e1045188fa2218e9bb1dd92547ddac6da8ff6500cebcaf26f24720419f56de120b64
+  languageName: node
+  linkType: hard
+
+"@polywrap/ipfs-plugin-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/ipfs::locator=snap%40workspace%3Apackages%2Fsnap":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/ipfs-plugin-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/ipfs#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/ipfs::hash=fc345b&locator=snap%40workspace%3Apackages%2Fsnap"
+  dependencies:
+    "@polywrap/core-js": 0.10.0-pre.5
+    "@polywrap/ipfs-http-client-lite": 0.3.0
+    "@polywrap/plugin-js": 0.10.0-pre.5
+    abort-controller: 3.0.0
+    is-ipfs: 1.0.3
+    multiformats: 9.7.0
+  checksum: 2c68a6fb147e77e8760fbb5e6635e4bd7847068afc47565c686a18e0d2c35f9abda1207187029f6fa7bc7d5147b10a5ffebd55db57b644f881af52a1fe9d89df
+  languageName: node
+  linkType: hard
+
+"@polywrap/ipfs-resolver-plugin-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/uri-resolvers/ipfs-resolver::locator=snap%40workspace%3Apackages%2Fsnap":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/ipfs-resolver-plugin-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/uri-resolvers/ipfs-resolver#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/uri-resolvers/ipfs-resolver::hash=005608&locator=snap%40workspace%3Apackages%2Fsnap"
+  dependencies:
+    "@polywrap/core-js": 0.10.0-pre.5
+    "@polywrap/ipfs-http-client-lite": 0.3.0
+    "@polywrap/plugin-js": 0.10.0-pre.5
+    abort-controller: 3.0.0
+    is-ipfs: 1.0.3
+  checksum: 1eedd6d5c706e57bdb060281047393e904bfd3328ecef460f5c877864bd0545b6cc88d4b9dabf6e9bb16906ed02a62ea932ee9b2f793f9cd35f1ce0234f4803b
+  languageName: node
+  linkType: hard
+
 "@polywrap/msgpack-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack::locator=snap%40workspace%3Apackages%2Fsnap":
   version: 0.10.0-pre.5
   resolution: "@polywrap/msgpack-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack::hash=039047&locator=snap%40workspace%3Apackages%2Fsnap"
@@ -4263,6 +4308,19 @@ __metadata:
   dependencies:
     "@msgpack/msgpack": 2.7.2
   checksum: 8d13c18b249731f01bbb56f54e377fd2329b7baa3633b42e8f28ce12b761358a7ac33fd735310e64cd54888554e010f5ca8146c6ad81fb2a543941bb69c302db
+  languageName: node
+  linkType: hard
+
+"@polywrap/plugin-js@npm:0.10.0-pre.5":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/plugin-js@npm:0.10.0-pre.5"
+  dependencies:
+    "@polywrap/core-js": 0.10.0-pre.5
+    "@polywrap/msgpack-js": 0.10.0-pre.5
+    "@polywrap/result": 0.10.0-pre.5
+    "@polywrap/tracing-js": 0.10.0-pre.5
+    "@polywrap/wrap-manifest-types-js": 0.10.0-pre.5
+  checksum: 64a99e8714ba9abaf80d831ecf91bed8666ec91801fbeb45c245d195aba9f30affd4da48c364c04ac05bcf1a70c94b829e833d1ffc7e9ccebc682c1674138c97
   languageName: node
   linkType: hard
 
@@ -4291,6 +4349,18 @@ __metadata:
     "@opentelemetry/sdk-trace-base": 1.6.0
     "@opentelemetry/sdk-trace-web": 1.6.0
   checksum: 229c86d1ad7c2e8fc8520b47d9dd0077b8354461bf1644b7220ca7b245e51ac5bfa6a1be861d3086481510adb73c912cff9f3767972207ab8c5de578d650f2fe
+  languageName: node
+  linkType: hard
+
+"@polywrap/uri-resolver-extensions-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolver-extensions::locator=snap%40workspace%3Apackages%2Fsnap":
+  version: 0.10.0-pre.5
+  resolution: "@polywrap/uri-resolver-extensions-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolver-extensions#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolver-extensions::hash=2fcc80&locator=snap%40workspace%3Apackages%2Fsnap"
+  dependencies:
+    "@polywrap/core-js": 0.10.0-pre.5
+    "@polywrap/result": 0.10.0-pre.5
+    "@polywrap/uri-resolvers-js": 0.10.0-pre.5
+    "@polywrap/wasm-js": 0.10.0-pre.5
+  checksum: 8f7106f038f2ec63fcf02e4e74f394bfabb3800b566aee4ab97e1ec690e4661d94c2572b8b5434e55062eda9d289957c0f2635b6d1329adb38048b85554d79ba
   languageName: node
   linkType: hard
 
@@ -5560,6 +5630,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"abort-controller@npm:3.0.0, abort-controller@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "abort-controller@npm:3.0.0"
+  dependencies:
+    event-target-shim: ^5.0.0
+  checksum: 170bdba9b47b7e65906a28c8ce4f38a7a369d78e2271706f020849c1bfe0ee2067d4261df8bbb66eb84f79208fd5b710df759d64191db58cfba7ce8ef9c54b75
+  languageName: node
+  linkType: hard
+
 "abortcontroller-polyfill@npm:^1.1.9":
   version: 1.7.5
   resolution: "abortcontroller-polyfill@npm:1.7.5"
@@ -6061,6 +6140,16 @@ __metadata:
   dependencies:
     lru-cache: ^4.0.0
   checksum: 3f55cc78b3ddc745b6604dd144fc7bca2e21c7ba4c5ea18d312234dc625133511723dff6c71b2283582421f95d591bdb24bf89ce4c4869151e4ecedbdad4acf2
+  languageName: node
+  linkType: hard
+
+"async-iterator-to-pull-stream@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "async-iterator-to-pull-stream@npm:1.3.0"
+  dependencies:
+    get-iterator: ^1.0.2
+    pull-stream-to-async-iterator: ^1.0.1
+  checksum: 6780768afa97ee043a06ea0d4a47562bef44349fcbddad9464fcab55d752d910e3fd181bccccdbd491c9a5dbf3ce086bfd757954df5e9080437a7538408d2080
   languageName: node
   linkType: hard
 
@@ -6822,7 +6911,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer@npm:^5.5.0":
+"buffer@npm:^5.2.1, buffer@npm:^5.5.0, buffer@npm:^5.6.0":
   version: 5.7.1
   resolution: "buffer@npm:5.7.1"
   dependencies:
@@ -7182,6 +7271,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cids@npm:^0.7.1":
+  version: 0.7.5
+  resolution: "cids@npm:0.7.5"
+  dependencies:
+    buffer: ^5.5.0
+    class-is: ^1.1.0
+    multibase: ~0.6.0
+    multicodec: ^1.0.0
+    multihashes: ~0.4.15
+  checksum: 54aa031bef76b08a2c934237696a4af2cfc8afb5d2727cb39ab69f6ac142ef312b9a0c6070dc2b4be0a43076d8961339d8bf85287773c647b3d1d25ce203f325
+  languageName: node
+  linkType: hard
+
+"cids@npm:~0.8.0":
+  version: 0.8.3
+  resolution: "cids@npm:0.8.3"
+  dependencies:
+    buffer: ^5.6.0
+    class-is: ^1.1.0
+    multibase: ^1.0.0
+    multicodec: ^1.0.1
+    multihashes: ^1.0.1
+  checksum: ca4b18e421a6f5e446e63f296ad5c91b55bd4dd4880a78777857b2279460259946691d383928503c4381f0e05f998c7bfab5b6e623acc2d4d237571d99c53d9d
+  languageName: node
+  linkType: hard
+
 "cipher-base@npm:^1.0.0, cipher-base@npm:^1.0.1, cipher-base@npm:^1.0.3":
   version: 1.0.4
   resolution: "cipher-base@npm:1.0.4"
@@ -7189,6 +7304,13 @@ __metadata:
     inherits: ^2.0.1
     safe-buffer: ^5.0.1
   checksum: 47d3568dbc17431a339bad1fe7dff83ac0891be8206911ace3d3b818fc695f376df809bea406e759cdea07fff4b454fa25f1013e648851bec790c1d75763032e
+  languageName: node
+  linkType: hard
+
+"class-is@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "class-is@npm:1.1.0"
+  checksum: 49024de3b264fc501a38dd59d8668f1a2b4973fa6fcef6b83d80fe6fe99a2000a8fbea5b50d4607169c65014843c9f6b41a4f8473df806c1b4787b4d47521880
   languageName: node
   linkType: hard
 
@@ -9455,6 +9577,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"event-target-shim@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "event-target-shim@npm:5.0.1"
+  checksum: 1ffe3bb22a6d51bdeb6bf6f7cf97d2ff4a74b017ad12284cc9e6a279e727dc30a5de6bb613e5596ff4dc3e517841339ad09a7eec44266eccb1aa201a30448166
+  languageName: node
+  linkType: hard
+
 "events@npm:^3.0.0, events@npm:^3.2.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
@@ -9509,6 +9638,13 @@ __metadata:
   version: 2.0.3
   resolution: "expand-template@npm:2.0.3"
   checksum: 588c19847216421ed92befb521767b7018dc88f88b0576df98cb242f20961425e96a92cbece525ef28cc5becceae5d544ae0f5b9b5e2aa05acb13716ca5b3099
+  languageName: node
+  linkType: hard
+
+"explain-error@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "explain-error@npm:1.0.4"
+  checksum: 38afbe93c00aa313cd20d41d1103368090313765c86e2b2baf77f11979016fe862de1d05673aaf8297c5b1e67f0a68e95e5aee6df6a1e913766f506c00563c84
   languageName: node
   linkType: hard
 
@@ -9941,6 +10077,17 @@ __metadata:
     vue-template-compiler:
       optional: true
   checksum: c823de02ee258a26ea5c0c488b2f1825b941f72292417478689862468a9140b209ad7df52f67bd134228fe9f40e9115b604fc8f88a69338929fe52be869469b6
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^2.4.0":
+  version: 2.5.1
+  resolution: "form-data@npm:2.5.1"
+  dependencies:
+    asynckit: ^0.4.0
+    combined-stream: ^1.0.6
+    mime-types: ^2.1.12
+  checksum: 5134ada56cc246b293a1ac7678dba6830000603a3979cf83ff7b2f21f2e3725202237cfb89e32bcb38a1d35727efbd3c3a22e65b42321e8ade8eec01ce755d08
   languageName: node
   linkType: hard
 
@@ -10666,6 +10813,13 @@ __metadata:
     has: ^1.0.3
     has-symbols: ^1.0.3
   checksum: 152d79e87251d536cf880ba75cfc3d6c6c50e12b3a64e1ea960e73a3752b47c69f46034456eae1b0894359ce3bc64c55c186f2811f8a788b75b638b06fab228a
+  languageName: node
+  linkType: hard
+
+"get-iterator@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "get-iterator@npm:1.0.2"
+  checksum: 4a819aa91ecb61f4fd507bd62e3468d55f642f06011f944c381a739a21f685c36a37feb9324c8971e7c0fc70ca172066c45874fa2d1dcdf4b4fb8e43f16058c2
   languageName: node
   linkType: hard
 
@@ -11561,6 +11715,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ip-regex@npm:^4.0.0":
+  version: 4.3.0
+  resolution: "ip-regex@npm:4.3.0"
+  checksum: 7ff904b891221b1847f3fdf3dbb3e6a8660dc39bc283f79eb7ed88f5338e1a3d1104b779bc83759159be266249c59c2160e779ee39446d79d4ed0890dfd06f08
+  languageName: node
+  linkType: hard
+
 "ip@npm:^2.0.0":
   version: 2.0.0
   resolution: "ip@npm:2.0.0"
@@ -11785,6 +11946,30 @@ __metadata:
   dependencies:
     is-glob: ^2.0.0
   checksum: 184dd40d9c7a765506e4fdcd7e664f86de68a4d5d429964b160255fe40de1b4323d1b4e6ea76ff87debf788a330e4f27cb1dfe5fc2420405e1c8a16a6ed87092
+  languageName: node
+  linkType: hard
+
+"is-ip@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "is-ip@npm:3.1.0"
+  dependencies:
+    ip-regex: ^4.0.0
+  checksum: da2c2b282407194adf2320bade0bad94be9c9d0bdab85ff45b1b62d8185f31c65dff3884519d57bf270277e5ea2046c7916a6e5a6db22fe4b7ddcdd3760f23eb
+  languageName: node
+  linkType: hard
+
+"is-ipfs@npm:1.0.3":
+  version: 1.0.3
+  resolution: "is-ipfs@npm:1.0.3"
+  dependencies:
+    buffer: ^5.6.0
+    cids: ~0.8.0
+    iso-url: ~0.4.7
+    mafmt: ^7.1.0
+    multiaddr: ^7.4.3
+    multibase: ~0.7.0
+    multihashes: ~0.4.19
+  checksum: d011a484fd0884041e5397451236b64660b6facd008991d5e4fd27af811d0ee2c2780cd3b376a1b1db9497f4ca8c0607c5d61f9fd3a93067c003210350c6a861
   languageName: node
   linkType: hard
 
@@ -12065,6 +12250,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"iso-url@npm:~0.4.7":
+  version: 0.4.7
+  resolution: "iso-url@npm:0.4.7"
+  checksum: c42ae615b462fec55ea7b480548fc76ef69af26103fcbb12a305dd929a4c18c6b22e29c666b0601280e552f56b0f144eab0b28b9a6fbb12ec58dc7c8ae053124
+  languageName: node
+  linkType: hard
+
 "isobject@npm:^3.0.1":
   version: 3.0.1
   resolution: "isobject@npm:3.0.1"
@@ -12076,6 +12268,15 @@ __metadata:
   version: 0.1.2
   resolution: "isstream@npm:0.1.2"
   checksum: 1eb2fe63a729f7bdd8a559ab552c69055f4f48eb5c2f03724430587c6f450783c8f1cd936c1c952d0a927925180fcc892ebd5b174236cf1065d4bd5bdb37e963
+  languageName: node
+  linkType: hard
+
+"iterable-ndjson@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "iterable-ndjson@npm:1.1.0"
+  dependencies:
+    string_decoder: ^1.2.0
+  checksum: 15a64fdd33b92e0e1df49df50a2f838e0fdb3f7801ac04ae3c4931ac874e8105cf915c7cd4fb207bccac2435940e9b90b1564e29aa1ed31105d1dea529ab611b
   languageName: node
   linkType: hard
 
@@ -12846,6 +13047,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mafmt@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "mafmt@npm:7.1.0"
+  dependencies:
+    multiaddr: ^7.3.0
+  checksum: 5d891f2007e99e6bee0b741b07f65ab81c4bce4a0baab08d97f2b34a72a0b7647e3b6a36a3377162adf56faed18be9a62bc772ef64a4f15e65ea4d034be705f0
+  languageName: node
+  linkType: hard
+
 "make-dir@npm:^3.0.0, make-dir@npm:^3.0.2, make-dir@npm:^3.1.0":
   version: 3.1.0
   resolution: "make-dir@npm:3.1.0"
@@ -13416,6 +13626,89 @@ __metadata:
   languageName: node
   linkType: hard
 
+"multiaddr@npm:^7.3.0, multiaddr@npm:^7.4.3":
+  version: 7.5.0
+  resolution: "multiaddr@npm:7.5.0"
+  dependencies:
+    buffer: ^5.5.0
+    cids: ~0.8.0
+    class-is: ^1.1.0
+    is-ip: ^3.1.0
+    multibase: ^0.7.0
+    varint: ^5.0.0
+  checksum: b1228f75af074f7797c37e5701c32732ccbb8828543d24f1a4b39a164c9407d8ae3a6783860fffd5956939d34acf21f76dae426c2dd6f5f598482c70eeae31cc
+  languageName: node
+  linkType: hard
+
+"multibase@npm:^0.7.0, multibase@npm:~0.7.0":
+  version: 0.7.0
+  resolution: "multibase@npm:0.7.0"
+  dependencies:
+    base-x: ^3.0.8
+    buffer: ^5.5.0
+  checksum: 3a520897d706b3064b59ddee286a9e1a5b35bb19bd830f93d7ddecdbf69fa46648c8fda0fec49a5d4640b8b7ac9d5fe360417d6de2906599aa535f55bf6b8e58
+  languageName: node
+  linkType: hard
+
+"multibase@npm:^1.0.0, multibase@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "multibase@npm:1.0.1"
+  dependencies:
+    base-x: ^3.0.8
+    buffer: ^5.5.0
+  checksum: 5d34398f81dca137aafe65a171ed5d637cf789bebb4fd33e11c186bfecbe6435a3d4f5c0cf15282607215ccc3a55ff4150a42067e7bc7756a42554e5fbc6d0d5
+  languageName: node
+  linkType: hard
+
+"multibase@npm:~0.6.0":
+  version: 0.6.1
+  resolution: "multibase@npm:0.6.1"
+  dependencies:
+    base-x: ^3.0.8
+    buffer: ^5.5.0
+  checksum: 0e25a978d2b5cf73e4cce31d032bad85230ea99e9394d259210f676a76539316e7c51bd7dcc9d83523ec7ea1f0e7a3353c5f69397639d78be9acbefa29431faa
+  languageName: node
+  linkType: hard
+
+"multicodec@npm:^1.0.0, multicodec@npm:^1.0.1":
+  version: 1.0.4
+  resolution: "multicodec@npm:1.0.4"
+  dependencies:
+    buffer: ^5.6.0
+    varint: ^5.0.0
+  checksum: e6a2916fa76c023b1c90b32ae74f8a781cf0727f71660b245a5ed1db46add6f2ce1586bee5713b16caf0a724e81bfe0678d89910c20d3bb5fd9649dacb2be79e
+  languageName: node
+  linkType: hard
+
+"multiformats@npm:9.7.0":
+  version: 9.7.0
+  resolution: "multiformats@npm:9.7.0"
+  checksum: 6904d9d9f4ed764e9e61d064948f4590159fc85d9da5629e8ccad7fd84e55d7d9f6e8ffd471a27ac04fdc857acc4858b61cf579c87f45cca4d98a5a6ef200bf3
+  languageName: node
+  linkType: hard
+
+"multihashes@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "multihashes@npm:1.0.1"
+  dependencies:
+    buffer: ^5.6.0
+    multibase: ^1.0.1
+    varint: ^5.0.0
+  checksum: 21e338dfb23900f7c038ac708fab598b33bc3d8d02f636ff753969c575b934f979dec76936ca142c6fd126a8bd030f7f391a44a3681c92cab28311c8b0b70589
+  languageName: node
+  linkType: hard
+
+"multihashes@npm:~0.4.15, multihashes@npm:~0.4.19":
+  version: 0.4.21
+  resolution: "multihashes@npm:0.4.21"
+  dependencies:
+    buffer: ^5.5.0
+    multibase: ^0.7.0
+    varint: ^5.0.0
+  checksum: 688731560cf7384e899dc75c0da51e426eb7d058c5ea5eb57b224720a1108deb8797f1cd7f45599344d512d2877de99dd6a7b7773a095812365dea4ffe6ebd4c
+  languageName: node
+  linkType: hard
+
 "mute-stream@npm:0.0.8, mute-stream@npm:~0.0.4":
   version: 0.0.8
   resolution: "mute-stream@npm:0.0.8"
@@ -13520,7 +13813,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.7, node-fetch@npm:^2.6.6, node-fetch@npm:^2.6.7":
+"node-fetch@npm:2.6.7, node-fetch@npm:^2.6.0, node-fetch@npm:^2.6.6, node-fetch@npm:^2.6.7":
   version: 2.6.7
   resolution: "node-fetch@npm:2.6.7"
   dependencies:
@@ -15083,6 +15376,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pull-stream-to-async-iterator@npm:^1.0.1, pull-stream-to-async-iterator@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "pull-stream-to-async-iterator@npm:1.0.2"
+  dependencies:
+    pull-stream: ^3.6.9
+  checksum: 8afa11f405fc3b148dd8524337b28ed2a4bcdc48fecfebea6782e8bd7e9b0cddc4feabf0119926b36ca23dc74f2ff2713b45fe1e5861eabc79057e3c1055b21f
+  languageName: node
+  linkType: hard
+
+"pull-stream@npm:^3.6.9":
+  version: 3.7.0
+  resolution: "pull-stream@npm:3.7.0"
+  checksum: df0b864fd92bb61e84d02764a064bf023188c1c917d854029a5b8e543e163f9aaf1a9553067d4fdf5e248b0d96338e0a23fac9257e86cf740e7d03e05b7a77a3
+  languageName: node
+  linkType: hard
+
 "pump@npm:^3.0.0":
   version: 3.0.0
   resolution: "pump@npm:3.0.0"
@@ -15162,6 +15471,13 @@ __metadata:
   version: 0.2.0
   resolution: "querystring@npm:0.2.0"
   checksum: 8258d6734f19be27e93f601758858c299bdebe71147909e367101ba459b95446fbe5b975bf9beb76390156a592b6f4ac3a68b6087cea165c259705b8b4e56a69
+  languageName: node
+  linkType: hard
+
+"querystring@npm:^0.2.0":
+  version: 0.2.1
+  resolution: "querystring@npm:0.2.1"
+  checksum: 7b83b45d641e75fd39cd6625ddfd44e7618e741c61e95281b57bbae8fde0afcc12cf851924559e5cc1ef9baa3b1e06e22b164ea1397d65dd94b801f678d9c8ce
   languageName: node
   linkType: hard
 
@@ -16450,8 +16766,11 @@ __metadata:
     "@metamask/snaps-cli": ^0.22.0
     "@polywrap/client-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client
     "@polywrap/core-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/core
+    "@polywrap/ipfs-plugin-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/ipfs
+    "@polywrap/ipfs-resolver-plugin-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/uri-resolvers/ipfs-resolver
     "@polywrap/msgpack-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack
     "@polywrap/result": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/result
+    "@polywrap/uri-resolver-extensions-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolver-extensions
     "@polywrap/uri-resolvers-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolvers
     "@polywrap/wasm-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/wasm
     "@typescript-eslint/eslint-plugin": ^5.33.0
@@ -16916,7 +17235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string_decoder@npm:^1.1.1":
+"string_decoder@npm:^1.1.1, string_decoder@npm:^1.2.0":
   version: 1.3.0
   resolution: "string_decoder@npm:1.3.0"
   dependencies:
@@ -17908,6 +18227,13 @@ __metadata:
   version: 1.0.11
   resolution: "value-or-promise@npm:1.0.11"
   checksum: 13f8f2ef620118c73b4d1beee8ce6045d7182bbf15090ecfbcafb677ec43698506a5e9ace6bea5ea35c32bc612c9b1f824bb59b6581cdfb5c919052745c277d5
+  languageName: node
+  linkType: hard
+
+"varint@npm:^5.0.0":
+  version: 5.0.2
+  resolution: "varint@npm:5.0.2"
+  checksum: e1a66bf9a6cea96d1f13259170d4d41b845833acf3a9df990ea1e760d279bd70d5b1f4c002a50197efd2168a2fd43eb0b808444600fd4d23651e8d42fe90eb05
   languageName: node
   linkType: hard
 
