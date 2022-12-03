@@ -58,14 +58,13 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@polywrap/client-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client",
-    "@polywrap/core-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/core",
-    "@polywrap/ipfs-plugin-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/ipfs",
-    "@polywrap/ipfs-resolver-plugin-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/uri-resolvers/ipfs-resolver",
-    "@polywrap/msgpack-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack",
-    "@polywrap/result": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/result",
-    "@polywrap/uri-resolver-extensions-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolver-extensions",
-    "@polywrap/uri-resolvers-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolvers",
-    "@polywrap/wasm-js": "/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/wasm"
+    "@polywrap/client-js": "/Users/kris/WebstormProjects/monorepo/packages/js/client",
+    "@polywrap/core-js": "/Users/kris/WebstormProjects/monorepo/packages/js/core",
+    "@polywrap/ipfs-plugin-js": "0.10.0-pre.5",
+    "@polywrap/ipfs-resolver-plugin-js": "0.10.0-pre.5",
+    "@polywrap/msgpack-js": "/Users/kris/WebstormProjects/monorepo/packages/js/msgpack",
+    "@polywrap/result": "/Users/kris/WebstormProjects/monorepo/packages/js/result",
+    "@polywrap/uri-resolvers-js": "/Users/kris/WebstormProjects/monorepo/packages/js/uri-resolvers",
+    "@polywrap/wasm-js": "/Users/kris/WebstormProjects/monorepo/packages/js/wasm"
   }
 }

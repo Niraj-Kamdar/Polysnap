@@ -4211,27 +4211,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polywrap/client-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client::locator=snap%40workspace%3Apackages%2Fsnap":
+"@polywrap/client-js@file:/Users/kris/WebstormProjects/monorepo/packages/js/client::locator=snap%40workspace%3Apackages%2Fsnap":
   version: 0.10.0-pre.5
-  resolution: "@polywrap/client-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client::hash=a036cd&locator=snap%40workspace%3Apackages%2Fsnap"
+  resolution: "@polywrap/client-js@file:/Users/kris/WebstormProjects/monorepo/packages/js/client#/Users/kris/WebstormProjects/monorepo/packages/js/client::hash=6aa610&locator=snap%40workspace%3Apackages%2Fsnap"
   dependencies:
     "@polywrap/core-js": 0.10.0-pre.5
     "@polywrap/msgpack-js": 0.10.0-pre.5
     "@polywrap/result": 0.10.0-pre.5
     "@polywrap/uri-resolver-extensions-js": 0.10.0-pre.5
     "@polywrap/uri-resolvers-js": 0.10.0-pre.5
-  checksum: c75a5bf03e31a34c6a1388d2ff77994a8df2ac681a60d52dee8d45c12d06c478131ed7dc6dac934dfe7b9840c69bf83b0e83017653e86c53f59f6d6608d42482
+  checksum: 1c5ed2fdde9b9d6090abe8dae6e2bed40341a00f158b8f17d468af5f23ad4b34112c100403f9a6f297263de604a2ae22f375d7c2f38e2a56d67e2213534d87bb
   languageName: node
   linkType: hard
 
-"@polywrap/core-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/core::locator=snap%40workspace%3Apackages%2Fsnap":
+"@polywrap/core-js@file:/Users/kris/WebstormProjects/monorepo/packages/js/core::locator=snap%40workspace%3Apackages%2Fsnap":
   version: 0.10.0-pre.5
-  resolution: "@polywrap/core-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/core#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/core::hash=224fa9&locator=snap%40workspace%3Apackages%2Fsnap"
+  resolution: "@polywrap/core-js@file:/Users/kris/WebstormProjects/monorepo/packages/js/core#/Users/kris/WebstormProjects/monorepo/packages/js/core::hash=56e36c&locator=snap%40workspace%3Apackages%2Fsnap"
   dependencies:
     "@polywrap/result": 0.10.0-pre.5
     graphql: 15.5.0
     graphql-tag: 2.10.4
-  checksum: d8c7bec18faafab421b216f2f65929182f635fcc6d91aeec6759ffdbf61a85daf2da35079cbd2c511e4af047f22a1e69e627bffd8adc7171d0739d00591543c1
+  checksum: 41208707e66269a3380470bd39f66ca44f687c7b7dbf98bc2a483318397f18a5e53ff7059c7d24ef0dffe58c5c2efa33852c3e30af61de429398ed6a214f87dc
   languageName: node
   linkType: hard
 
@@ -4266,9 +4266,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polywrap/ipfs-plugin-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/ipfs::locator=snap%40workspace%3Apackages%2Fsnap":
+"@polywrap/ipfs-plugin-js@npm:0.10.0-pre.5":
   version: 0.10.0-pre.5
-  resolution: "@polywrap/ipfs-plugin-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/ipfs#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/ipfs::hash=fc345b&locator=snap%40workspace%3Apackages%2Fsnap"
+  resolution: "@polywrap/ipfs-plugin-js@npm:0.10.0-pre.5"
   dependencies:
     "@polywrap/core-js": 0.10.0-pre.5
     "@polywrap/ipfs-http-client-lite": 0.3.0
@@ -4276,29 +4276,29 @@ __metadata:
     abort-controller: 3.0.0
     is-ipfs: 1.0.3
     multiformats: 9.7.0
-  checksum: 2c68a6fb147e77e8760fbb5e6635e4bd7847068afc47565c686a18e0d2c35f9abda1207187029f6fa7bc7d5147b10a5ffebd55db57b644f881af52a1fe9d89df
+  checksum: a41114c6bbdb3c500c7f329f774c029d675477f3751ee1105f2f4791d09625d3a90ff2e4e2c2b07e5288b55ccd352c48537e51a2cd9c71072f8a736f11fb27f8
   languageName: node
   linkType: hard
 
-"@polywrap/ipfs-resolver-plugin-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/uri-resolvers/ipfs-resolver::locator=snap%40workspace%3Apackages%2Fsnap":
+"@polywrap/ipfs-resolver-plugin-js@npm:0.10.0-pre.5":
   version: 0.10.0-pre.5
-  resolution: "@polywrap/ipfs-resolver-plugin-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/uri-resolvers/ipfs-resolver#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/uri-resolvers/ipfs-resolver::hash=005608&locator=snap%40workspace%3Apackages%2Fsnap"
+  resolution: "@polywrap/ipfs-resolver-plugin-js@npm:0.10.0-pre.5"
   dependencies:
     "@polywrap/core-js": 0.10.0-pre.5
     "@polywrap/ipfs-http-client-lite": 0.3.0
     "@polywrap/plugin-js": 0.10.0-pre.5
     abort-controller: 3.0.0
     is-ipfs: 1.0.3
-  checksum: 1eedd6d5c706e57bdb060281047393e904bfd3328ecef460f5c877864bd0545b6cc88d4b9dabf6e9bb16906ed02a62ea932ee9b2f793f9cd35f1ce0234f4803b
+  checksum: b324379a201a5300090023ff41983b22b69ac533b98e2064dc9e7d520b5b2c30e24e0235d21743723420e9737d2913f7ad95da0237f58e54cfe718216cf9bd8b
   languageName: node
   linkType: hard
 
-"@polywrap/msgpack-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack::locator=snap%40workspace%3Apackages%2Fsnap":
+"@polywrap/msgpack-js@file:/Users/kris/WebstormProjects/monorepo/packages/js/msgpack::locator=snap%40workspace%3Apackages%2Fsnap":
   version: 0.10.0-pre.5
-  resolution: "@polywrap/msgpack-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack::hash=039047&locator=snap%40workspace%3Apackages%2Fsnap"
+  resolution: "@polywrap/msgpack-js@file:/Users/kris/WebstormProjects/monorepo/packages/js/msgpack#/Users/kris/WebstormProjects/monorepo/packages/js/msgpack::hash=ff7266&locator=snap%40workspace%3Apackages%2Fsnap"
   dependencies:
     "@msgpack/msgpack": 2.7.2
-  checksum: 44cfa0529ca38eb5dbf9aa48e8a5b872c144decfe3dafe4d11717cadf13f31bb869be9cfd1a37c8615cbeb947508748d93acca2c640b12bcae8e5332f34e6cbf
+  checksum: 4abe07cadf848e94ccdf6ac62342f8e471e06cc15c2f500fa564dabc4d8df3f2c652b874a5f70bd3371edc133f23f581f662dc5cf0f2d8ec0e8e6ff008300cce
   languageName: node
   linkType: hard
 
@@ -4324,9 +4324,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polywrap/result@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/result::locator=snap%40workspace%3Apackages%2Fsnap":
+"@polywrap/result@file:/Users/kris/WebstormProjects/monorepo/packages/js/result::locator=snap%40workspace%3Apackages%2Fsnap":
   version: 0.10.0-pre.5
-  resolution: "@polywrap/result@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/result#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/result::hash=6625c2&locator=snap%40workspace%3Apackages%2Fsnap"
+  resolution: "@polywrap/result@file:/Users/kris/WebstormProjects/monorepo/packages/js/result#/Users/kris/WebstormProjects/monorepo/packages/js/result::hash=6625c2&locator=snap%40workspace%3Apackages%2Fsnap"
   checksum: 4ea352a35237c2a82cfc907bef8aa78a86de0b75980780ba3302000a2f40ef0dd91bde1ecc2f4d1ededf508fe25f40905a284b327375893a93830934d8fc92e2
   languageName: node
   linkType: hard
@@ -4352,18 +4352,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polywrap/uri-resolver-extensions-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolver-extensions::locator=snap%40workspace%3Apackages%2Fsnap":
-  version: 0.10.0-pre.5
-  resolution: "@polywrap/uri-resolver-extensions-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolver-extensions#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolver-extensions::hash=2fcc80&locator=snap%40workspace%3Apackages%2Fsnap"
-  dependencies:
-    "@polywrap/core-js": 0.10.0-pre.5
-    "@polywrap/result": 0.10.0-pre.5
-    "@polywrap/uri-resolvers-js": 0.10.0-pre.5
-    "@polywrap/wasm-js": 0.10.0-pre.5
-  checksum: 8f7106f038f2ec63fcf02e4e74f394bfabb3800b566aee4ab97e1ec690e4661d94c2572b8b5434e55062eda9d289957c0f2635b6d1329adb38048b85554d79ba
-  languageName: node
-  linkType: hard
-
 "@polywrap/uri-resolver-extensions-js@npm:0.10.0-pre.5":
   version: 0.10.0-pre.5
   resolution: "@polywrap/uri-resolver-extensions-js@npm:0.10.0-pre.5"
@@ -4377,13 +4365,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polywrap/uri-resolvers-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolvers::locator=snap%40workspace%3Apackages%2Fsnap":
+"@polywrap/uri-resolvers-js@file:/Users/kris/WebstormProjects/monorepo/packages/js/uri-resolvers::locator=snap%40workspace%3Apackages%2Fsnap":
   version: 0.10.0-pre.5
-  resolution: "@polywrap/uri-resolvers-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolvers#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolvers::hash=5eb3e5&locator=snap%40workspace%3Apackages%2Fsnap"
+  resolution: "@polywrap/uri-resolvers-js@file:/Users/kris/WebstormProjects/monorepo/packages/js/uri-resolvers#/Users/kris/WebstormProjects/monorepo/packages/js/uri-resolvers::hash=b42f31&locator=snap%40workspace%3Apackages%2Fsnap"
   dependencies:
     "@polywrap/core-js": 0.10.0-pre.5
     "@polywrap/result": 0.10.0-pre.5
-  checksum: d159d32090b0b88a98cb6d2bd73ffb6dc31a1456d660060c8d863d05ec2d5af32f556b38a8ae7ab288f93f85bc23b188129c8e03cf764247698cbca65d1a0f18
+  checksum: 623b2b155c96d539404d56921535384d78721b6a31c1eebc1d4d0b7cbec78664955f2db17a082d37386740476ca6dd27e094deb9c1d8c743e0a3811170685c03
   languageName: node
   linkType: hard
 
@@ -4398,15 +4386,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polywrap/wasm-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/wasm::locator=snap%40workspace%3Apackages%2Fsnap":
+"@polywrap/wasm-js@file:/Users/kris/WebstormProjects/monorepo/packages/js/wasm::locator=snap%40workspace%3Apackages%2Fsnap":
   version: 0.10.0-pre.5
-  resolution: "@polywrap/wasm-js@file:/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/wasm#/Users/niraj/Documents/projects/polywrap/monorepo/packages/js/wasm::hash=891b11&locator=snap%40workspace%3Apackages%2Fsnap"
+  resolution: "@polywrap/wasm-js@file:/Users/kris/WebstormProjects/monorepo/packages/js/wasm#/Users/kris/WebstormProjects/monorepo/packages/js/wasm::hash=452694&locator=snap%40workspace%3Apackages%2Fsnap"
   dependencies:
     "@polywrap/asyncify-js": 0.10.0-pre.5
     "@polywrap/core-js": 0.10.0-pre.5
     "@polywrap/msgpack-js": 0.10.0-pre.5
     "@polywrap/result": 0.10.0-pre.5
-  checksum: 284d6ca290927966e22f474e29439a029d9ca343e0bf9edbe53ebbe1c33e93a8144deffd5c90e88c21ee5182b55c6b6dbad53965dc633bbbde5eaa9066724ee9
+  checksum: 1ae8a71a75638f6a624aa368486b433b04883f8df27812a2682020ab2afac0440a3ca906c4ca5bba9f2ac213137cde4e7ca492e59914955515755408dbee56bf
   languageName: node
   linkType: hard
 
@@ -16764,15 +16752,14 @@ __metadata:
     "@metamask/eslint-config-typescript": ^10.0.0
     "@metamask/snap-types": ^0.22.0
     "@metamask/snaps-cli": ^0.22.0
-    "@polywrap/client-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/client
-    "@polywrap/core-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/core
-    "@polywrap/ipfs-plugin-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/ipfs
-    "@polywrap/ipfs-resolver-plugin-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/plugins/uri-resolvers/ipfs-resolver
-    "@polywrap/msgpack-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/msgpack
-    "@polywrap/result": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/result
-    "@polywrap/uri-resolver-extensions-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolver-extensions
-    "@polywrap/uri-resolvers-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/uri-resolvers
-    "@polywrap/wasm-js": /Users/niraj/Documents/projects/polywrap/monorepo/packages/js/wasm
+    "@polywrap/client-js": /Users/kris/WebstormProjects/monorepo/packages/js/client
+    "@polywrap/core-js": /Users/kris/WebstormProjects/monorepo/packages/js/core
+    "@polywrap/ipfs-plugin-js": 0.10.0-pre.5
+    "@polywrap/ipfs-resolver-plugin-js": 0.10.0-pre.5
+    "@polywrap/msgpack-js": /Users/kris/WebstormProjects/monorepo/packages/js/msgpack
+    "@polywrap/result": /Users/kris/WebstormProjects/monorepo/packages/js/result
+    "@polywrap/uri-resolvers-js": /Users/kris/WebstormProjects/monorepo/packages/js/uri-resolvers
+    "@polywrap/wasm-js": /Users/kris/WebstormProjects/monorepo/packages/js/wasm
     "@typescript-eslint/eslint-plugin": ^5.33.0
     "@typescript-eslint/parser": ^5.33.0
     eslint: ^8.21.0
