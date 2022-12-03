@@ -94,10 +94,6 @@ export const ReconnectButton = (props: ComponentProps<typeof Button>) => {
   );
 };
 
-export const InvokeButton = (props: ComponentProps<typeof Button>) => {
-  return <Button {...props}>Send message</Button>;
-};
-
 export const HeaderButtons = ({
   state,
   onConnectClick,

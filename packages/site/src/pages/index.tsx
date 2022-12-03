@@ -1,18 +1,13 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import styled from 'styled-components';
 import { MetamaskActions, MetaMaskContext } from '../hooks';
-import {
-  connectSnap,
-  getSnap,
-  sendInvoke,
-  shouldDisplayReconnectButton,
-} from '../utils';
+import { connectSnap, getSnap, shouldDisplayReconnectButton } from '../utils';
 import {
   ConnectButton,
   InstallFlaskButton,
   ReconnectButton,
-  InvokeButton,
   Card,
+  InvokeCard,
 } from '../components';
 
 const Container = styled.div`
@@ -102,6 +97,8 @@ const ErrorMessage = styled.div`
 const Index = () => {
   const [state, dispatch] = useContext(MetaMaskContext);
 
+  const [result, setResult] = useState(undefined);
+
   const handleConnectClick = async () => {
     try {
       await connectSnap();
@@ -117,30 +114,12 @@ const Index = () => {
     }
   };
 
-  const handleInvokeClick = async () => {
-    try {
-      const result: string | undefined = await sendInvoke({
-        uri: 'ipfs/QmZxS29UBVryFgcN9cET5UuNcChv7kujQ7X3HbVrLW6gf2',
-        method: 'simpleMethod',
-        args: {
-          arg: 'We are gonna make it!',
-        },
-      });
-      console.log(`We did it: ${result}`);
-    } catch (e) {
-      console.error(e);
-      dispatch({ type: MetamaskActions.SetError, payload: e });
-    }
-  };
-
   return (
     <Container>
       <Heading>
-        Welcome to <Span>template-snap</Span>
+        Welcome to <Span>Snappy Wraps</Span>
       </Heading>
-      <Subtitle>
-        Get started by editing <code>src/index.ts</code>
-      </Subtitle>
+      <Subtitle>Invoke Wasm modules on the fly, in your browser</Subtitle>
       <CardContainer>
         {state.error && (
           <ErrorMessage>
@@ -190,17 +169,8 @@ const Index = () => {
             disabled={!state.installedSnap}
           />
         )}
-        <Card
-          content={{
-            title: 'Invoke!',
-            description: 'Invoke the simple wrapper.',
-            button: (
-              <InvokeButton
-                onClick={handleInvokeClick}
-                disabled={!state.installedSnap}
-              />
-            ),
-          }}
+        <InvokeCard
+          setResult={setResult}
           disabled={!state.installedSnap}
           fullWidth={
             state.isFlask &&
@@ -208,14 +178,7 @@ const Index = () => {
             !shouldDisplayReconnectButton(state.installedSnap)
           }
         />
-        <Notice>
-          <p>
-            Please note that the <b>snap.manifest.json</b> and{' '}
-            <b>package.json</b> must be located in the server root directory and
-            the bundle must be hosted at the location specified by the location
-            field.
-          </p>
-        </Notice>
+        <Notice>{result && JSON.stringify(result)}</Notice>
       </CardContainer>
     </Container>
   );

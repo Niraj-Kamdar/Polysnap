@@ -50,6 +50,7 @@ export async function getClient(): Promise<PolywrapClient> {
         env: {
           provider: defaultIpfsProviders[0],
           fallbackProviders: defaultIpfsProviders.slice(1),
+          disableParallelRequests: true,
         },
       },
     ],
