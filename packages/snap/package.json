@@ -60,6 +60,8 @@
   "dependencies": {
     "@polywrap/client-js": "/Users/kris/WebstormProjects/monorepo/packages/js/client",
     "@polywrap/core-js": "/Users/kris/WebstormProjects/monorepo/packages/js/core",
+    "@polywrap/ipfs-plugin-js": "0.10.0-pre.5",
+    "@polywrap/ipfs-resolver-plugin-js": "0.10.0-pre.5",
     "@polywrap/msgpack-js": "/Users/kris/WebstormProjects/monorepo/packages/js/msgpack",
     "@polywrap/result": "/Users/kris/WebstormProjects/monorepo/packages/js/result",
     "@polywrap/uri-resolvers-js": "/Users/kris/WebstormProjects/monorepo/packages/js/uri-resolvers",
