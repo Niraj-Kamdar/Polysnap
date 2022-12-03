@@ -117,9 +117,11 @@ const Index = () => {
   return (
     <Container>
       <Heading>
-        Welcome to <Span>Snappy Wraps</Span>
+        Welcome to <Span>Polysnap</Span>
       </Heading>
-      <Subtitle>Invoke Wasm modules on the fly, in your browser</Subtitle>
+      <Subtitle>
+        Invoke Polywrap Wasm Wrappers on the fly, in your browser
+      </Subtitle>
       <CardContainer>
         {state.error && (
           <ErrorMessage>

@@ -1,5 +1,6 @@
 import styled, { useTheme } from 'styled-components';
 import { ReactComponent as MetaMaskFox } from '../assets/metamask_fox.svg';
+import { ReactComponent as PolywrapLogo } from '../assets/polywrap.svg';
 import { MetaMask } from './MetaMask';
 import { PoweredBy } from './PoweredBy';
 
@@ -19,6 +20,7 @@ const PoweredByButton = styled.a`
   align-items: center;
   justify-content: center;
   padding: 1.2rem;
+  margin: 1.2rem;
   border-radius: ${({ theme }) => theme.radii.button};
   box-shadow: ${({ theme }) => theme.shadows.button};
   background-color: ${({ theme }) => theme.colors.background.alternative};
@@ -39,7 +41,14 @@ export const Footer = () => {
         <MetaMaskFox />
         <PoweredByContainer>
           <PoweredBy color={theme.colors.text.muted} />
-          <MetaMask color={theme.colors.text.default} />
+          <p>METAMASK</p>
+        </PoweredByContainer>
+      </PoweredByButton>
+      <PoweredByButton href="https://polywrap.io/" target="_blank">
+        <PolywrapLogo />
+        <PoweredByContainer>
+          <PoweredBy color={theme.colors.text.muted} />
+          <p>POLYWRAP</p>
         </PoweredByContainer>
       </PoweredByButton>
     </FooterWrapper>

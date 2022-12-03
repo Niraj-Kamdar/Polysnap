@@ -1,6 +1,13 @@
 import { Uri } from '@polywrap/core-js';
 import { ipfsResolverPlugin } from '@polywrap/ipfs-resolver-plugin-js';
 import { ipfsPlugin } from '@polywrap/ipfs-plugin-js';
+import { httpPlugin } from '@polywrap/http-plugin-js';
+import {
+  Connection,
+  Connections,
+  ethereumPlugin,
+} from '@polywrap/ethereum-plugin-js';
+import { ensResolverPlugin } from '@polywrap/ens-resolver-plugin-js';
 import { RecursiveResolver, WrapperResolver } from '@polywrap/uri-resolvers-js';
 import { PolywrapClient } from './client';
 import { ExtendableUriResolver } from './uri-resolver-extentions';
@@ -14,6 +21,7 @@ export async function getClient(): Promise<PolywrapClient> {
   const ipfsResolverWrapperResult = await ipfsResolverPlugin(
     {},
   ).createWrapper();
+  // IPFS URI RESOLVER
   if (!ipfsResolverWrapperResult.ok) {
     throw ipfsResolverWrapperResult.error;
   }
@@ -22,6 +30,7 @@ export async function getClient(): Promise<PolywrapClient> {
     ipfsResolverWrapperResult.value,
   );
 
+  // IPFS RESOLVER
   const ipfsWrapperResult = await ipfsPlugin({}).createWrapper();
   if (!ipfsWrapperResult.ok) {
     throw ipfsWrapperResult.error;
@@ -31,9 +40,60 @@ export async function getClient(): Promise<PolywrapClient> {
     ipfsWrapperResult.value,
   );
 
+  // HTTP RESOLVER
+  const httpWrapperResult = await httpPlugin({}).createWrapper();
+  if (!httpWrapperResult.ok) {
+    throw httpWrapperResult.error;
+  }
+  const httpResolver = new WrapperResolver(
+    Uri.from('ens/http.polywrap.eth'),
+    httpWrapperResult.value,
+  );
+
+  // ENS RESOLVER
+  const ensWrapperResult = await ensResolverPlugin({}).createWrapper();
+  if (!ensWrapperResult.ok) {
+    throw ensWrapperResult.error;
+  }
+  const ensResolver = new WrapperResolver(
+    Uri.from('ens/ens-resolver.polywrap.eth'),
+    ensWrapperResult.value,
+  );
+
+  // Ethereum RESOLVER
+  const ethereumWrapperResult = await ethereumPlugin({
+    connections: new Connections({
+      networks: {
+        mainnet: new Connection({
+          provider:
+            'https://mainnet.infura.io/v3/b00b2c2cc09c487685e9fb061256d6a6',
+        }),
+        goerli: new Connection({
+          provider:
+            'https://goerli.infura.io/v3/b00b2c2cc09c487685e9fb061256d6a6',
+        }),
+        rinkeby: new Connection({
+          provider:
+            'https://rinkeby.infura.io/v3/b00b2c2cc09c487685e9fb061256d6a6',
+        }),
+      },
+    }),
+  }).createWrapper();
+  if (!ethereumWrapperResult.ok) {
+    throw ethereumWrapperResult.error;
+  }
+  const ethereumResolver = new WrapperResolver(
+    Uri.from('ens/ethereum.polywrap.eth'),
+    ensWrapperResult.value,
+  );
+
+  // AGGREGATED RESOLVER
   const resolver = RecursiveResolver.from([
+    httpResolver,
     ipfsResolver,
     ipfsUriResolver,
+    ethereumResolver,
+    ensResolver,
     new ExtendableUriResolver(),
   ]);
 
@@ -41,7 +101,10 @@ export async function getClient(): Promise<PolywrapClient> {
     interfaces: [
       {
         interface: new Uri('wrap://ens/uri-resolver.core.polywrap.eth'),
-        implementations: [new Uri('wrap://ens/ipfs-resolver.polywrap.eth')],
+        implementations: [
+          new Uri('wrap://ens/ens-resolver.polywrap.eth'),
+          new Uri('wrap://ens/ipfs-resolver.polywrap.eth'),
+        ],
       },
     ],
     envs: [
@@ -50,7 +113,6 @@ export async function getClient(): Promise<PolywrapClient> {
         env: {
           provider: defaultIpfsProviders[0],
           fallbackProviders: defaultIpfsProviders.slice(1),
-          disableParallelRequests: true,
         },
       },
     ],
