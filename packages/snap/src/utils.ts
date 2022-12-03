@@ -109,6 +109,14 @@ export async function getClient(): Promise<PolywrapClient> {
     ],
     envs: [
       {
+        uri: new Uri(
+          'wrap://ipfs/QmQNkGuqN4KA1Bhb6TVfVy75pSJ3SyRvjbK6rjes9zkNnD',
+        ),
+        env: {
+          provider: 'https://api.thegraph.com',
+        },
+      },
+      {
         uri: new Uri('wrap://ens/ipfs.polywrap.eth'),
         env: {
           provider: defaultIpfsProviders[0],
