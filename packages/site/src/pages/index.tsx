@@ -4,14 +4,14 @@ import { MetamaskActions, MetaMaskContext } from '../hooks';
 import {
   connectSnap,
   getSnap,
-  sendHello,
+  sendInvoke,
   shouldDisplayReconnectButton,
 } from '../utils';
 import {
   ConnectButton,
   InstallFlaskButton,
   ReconnectButton,
-  SendHelloButton,
+  InvokeButton,
   Card,
 } from '../components';
 
@@ -117,9 +117,16 @@ const Index = () => {
     }
   };
 
-  const handleSendHelloClick = async () => {
+  const handleInvokeClick = async () => {
     try {
-      await sendHello();
+      const result: string | undefined = await sendInvoke({
+        uri: 'ipfs/QmZxS29UBVryFgcN9cET5UuNcChv7kujQ7X3HbVrLW6gf2',
+        method: 'simpleMethod',
+        args: {
+          arg: 'We are gonna make it!',
+        },
+      });
+      console.log(`We did it: ${result}`);
     } catch (e) {
       console.error(e);
       dispatch({ type: MetamaskActions.SetError, payload: e });
@@ -185,12 +192,11 @@ const Index = () => {
         )}
         <Card
           content={{
-            title: 'Send Hello message',
-            description:
-              'Display a custom message within a confirmation screen in MetaMask.',
+            title: 'Invoke!',
+            description: 'Invoke the simple wrapper.',
             button: (
-              <SendHelloButton
-                onClick={handleSendHelloClick}
+              <InvokeButton
+                onClick={handleInvokeClick}
                 disabled={!state.installedSnap}
               />
             ),

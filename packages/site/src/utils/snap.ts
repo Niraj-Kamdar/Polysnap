@@ -1,5 +1,6 @@
 import { defaultSnapOrigin } from '../config';
 import { GetSnapsResponse, Snap } from '../types';
+import { InvokerOptions } from '@polywrap/client-js';
 
 /**
  * Get the installed snaps in MetaMask.
@@ -60,16 +61,20 @@ export const getSnap = async (version?: string): Promise<Snap | undefined> => {
  * Invoke the "hello" method from the example snap.
  */
 
-export const sendHello = async () => {
-  await window.ethereum.request({
+export const sendInvoke = async (
+  invocation: InvokerOptions,
+): Promise<string | undefined> => {
+  const result = await window.ethereum.request({
     method: 'wallet_invokeSnap',
     params: [
       defaultSnapOrigin,
       {
-        method: 'hello',
+        method: 'wrap_invoke',
+        params: invocation,
       },
     ],
   });
+  return (result as string) ?? undefined;
 };
 
 export const isLocalSnap = (snapId: string) => snapId.startsWith('local:');

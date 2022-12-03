@@ -14,12 +14,13 @@ export const onRpcRequest: OnRpcRequestHandler = async ({
 }) => {
   switch (request.method) {
     case 'wrap_invoke':
+      console.log('made it here!');
       const invocation = request.params as unknown as InvokerOptions;
       const isApproved = await wallet.request({
         method: 'snap_confirm',
         params: [
           {
-            prompt: `Received an invocation from ${origin}!`,
+            prompt: `Received an invocation from me!`,
             description: `URI: ${invocation.uri}\nMethod: ${invocation.method}`,
             textAreaContent: `Args ${JSON.stringify(invocation.args)}`,
           },
