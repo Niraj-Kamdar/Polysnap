@@ -304,7 +304,7 @@ export class PolywrapClient implements CoreClient {
 
     if (!result.ok) {
       if (result.error) {
-        return ResultErr(new Error(result.error));
+        return ResultErr(new Error(result.error as string));
       }
       return ResultErr(
         Error(
